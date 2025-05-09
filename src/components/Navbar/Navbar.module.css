@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    max-width: 1280;
     height: 70px;
     background-color: white;
     border-bottom: 1px solid #eaeaea;
@@ -14,9 +15,6 @@
   
   
   .navbarLogo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
     margin: 0;
     padding: 0;
     align-self: center;
@@ -75,6 +73,7 @@
   .navItem:hover::after {
     opacity: 1;
   }
+
   /* ------------------ MENU ------------------------------------ */
   .megaMenu {
     display: flex;
@@ -166,7 +165,8 @@
     grid-row: 2 / 3;
   }
   
-  .menuItem > svg { /* ------------------ ver ------------------------------------ */
+ 
+  .menuItem > i { 
     width: 20px;
     height: 20px;
     margin-right: 1rem; 
@@ -174,15 +174,7 @@
     align-self: flex-start; 
     margin-bottom: 0.3rem; 
     fill: currentColor; 
-  }
-  .menuItem > i { /* ------------------ ver ------------------------------------ */
-    width: 20px;
-    height: 20px;
-    margin-right: 1rem; 
-    gap: 10px;
-    align-self: flex-start; 
-    margin-bottom: 0.3rem; 
-    fill: currentColor; 
+    cursor: pointer;
   }
   /* ------------------ BOTONES ------------------------------------ */
   .iconContainer {
@@ -223,10 +215,7 @@
     font-weight: bold;
   }
   
-  .button:hover {
-    background-color: #007bff;
-    color: white;
-  }
+ 
   
   .chevronIcon {
     display: inline-block;
@@ -258,19 +247,18 @@
   /* ----------- MEDIA QUERY PARA MOBILE ----------- */
   
   @media screen and (max-width: 768px) {
-    .navbar {
-      
-      
+    .navbar { 
       display: flex;
+      position: absolute; 
       justify-content: space-between;
       align-items: center;
       width: 100%;
       position: relative;
       z-index: 10;
       font-weight: bold;
-      margin: 0 40px;
+      margin: 0;
     }
-
+   
     .menuContainer {
       
       width: 100%; 
@@ -279,7 +267,7 @@
 
     .menuIcon {
       display: block;
-     
+      margin-left: auto;
     }
   
     .navbarLinks {
@@ -343,14 +331,14 @@
       box-shadow: none;
       overflow-y: auto;
       z-index: auto;
-  padding: 1rem 0;
-  align-items: stretch; 
+    padding: 1rem 0;
+    align-items: stretch; 
     }
     .megaMenuColumns {
       
       align-items: stretch; 
       flex-direction: column;
-    gap: 1rem;
+      gap: 1rem;
     }
   
     .textColumn h4 {
@@ -442,11 +430,21 @@
     }
     .iconContainer {
       flex-direction: column;
+      gap: 10px;
+      height: auto;
       justify-content: flex-start;
       width: 100%;
-      
+      padding: 0 20px 0 20px;
     }
+    .iconContainer > i {
+      margin-right: 10px; 
+      cursor: pointer;
+    }
+  
     
+    .iconContainer > i:last-child {
+      margin-top: 10px;
+    }
     .iconContainer,
     .buttonContainer {
       margin-top: 1rem;

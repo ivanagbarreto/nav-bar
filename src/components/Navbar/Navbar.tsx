@@ -374,8 +374,8 @@ const Navbar: React.FC = () => {
 
         <div className={styles.rightContainer}>
           <div className={styles.iconContainer}>
-            <i className="fa-solid fa-globe fa-lg" style={{ color: '#000000' }} ></i>
-            <i className="fa-solid fa-moon fa-lg" style={{ color: '#000000' }}></i>
+            <a href=""> <i className="fa-solid fa-globe fa-lg" style={{ color: '#000000' }} ></i></a>
+            <a href=""><i className="fa-solid fa-moon fa-lg" style={{ color: '#000000' }}></i></a>
             
           </div>
 

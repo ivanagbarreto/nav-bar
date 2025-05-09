@@ -1,12 +1,13 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar.tsx';
+import Home from './Home.tsx';
 
 function App() {
   return (
     <>
     
     <Navbar/>
-    
+    <Home/>
     </>
   );
 }

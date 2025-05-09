@@ -1,0 +1,29 @@
+
+/*************  CUSTOM PROPERTIES *************/
+:root {
+  --first-color: #DD1405;
+  --white-color: #ffffff;
+  --gray-light-color: #6E6E6E;
+  --navbar-height: 85px;
+}
+/*************  RESET *************/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: black;
+  font-family: 'Inter', sans-serif;
+}

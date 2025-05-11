@@ -54,7 +54,7 @@
   bottom: -0.8rem;
   left: 0;
   width: 100%;
-  height: 4px;
+  height: 2px;
   background-color: var(--first-color);
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -62,7 +62,6 @@
 .navItem:hover::after {
   opacity: 1;
 }
-
 /* ------------------ MENU ------------------------------------ */
 .megaMenu {
   position: fixed;

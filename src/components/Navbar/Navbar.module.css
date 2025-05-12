@@ -48,6 +48,7 @@
   padding: 1rem 1.5rem;
   cursor: pointer;
 }
+
 .navItem::after {
   content: "";
   position: absolute;
@@ -317,7 +318,7 @@
   .iconContainer {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-items: flex-start;
     height: auto;
     width: 100%;
     padding: 0 20px 0 20px;
